@@ -1,20 +1,20 @@
 {
     "iniciais": [
-        "Você está com dor de cabeça ?",
-        "Você está com garganta inflamada ?",
-        "Você está com cansaço ?",
-        "Você está com dor de ouvido ?"
+        ["dor_de_cabeça", "Você está com dor de cabeça ?"],
+        ["garganta_inflamada", "Você está com garganta inflamada ?"],
+        ["cansaço", "Você está com cansaço ?"],
+        ["dor_de_ouvido", "Você está com dor de ouvido ?"]
     ],
     "dor_de_cabeça = SIM": [
-        "Você está com garganta inflamada ?",
-        "Você está com tosse ?"
+        ["garganta_inflamada", "Você está com garganta inflamada ?"],
+        ["tosse", "Você está com tosse ?"]
     ],
     "garganta_inflamada = SIM": [
-        "Você está com dor de garganta ?",
-        "Você está com dor de ouvido ?"
+        ["dor_de_garganta", "Você está com dor de garganta ?"],
+        ["dor_de_ouvido", "Você está com dor de ouvido ?"]
     ],
     "cansaço = SIM": [
-        "Você está com garganta inflamada ?",
-        "Você está com problemas para dormir ?"
+        ["garganta_inflamada", "Você está com garganta inflamada ?"],
+        ["privação_de_sono", "Você está com problemas para dormir ?"]
     ]
 }
