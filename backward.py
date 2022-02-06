@@ -1,14 +1,32 @@
-from readFile import read
+import var
 
+  
 class Backward():
-    def __init__(self):
-        self.__knowledgeBase = read()
-        self.start()
+    
+    def handleInput(self,rule):
+     flag = True
+     while flag:
+        ans =  input(rule).lower()
+        if ans == "sim" or ans == "não":
+           flag = False
+           return ans
+       
+    def search(self, mt):
 
-    def start(self):
-        for rule in self.__knowledgeBase.getRules():
-            print(rule.IF, rule.THEN)
-        
+        if "garganta_inflamada" == mt:
+            ans = self.handleInput(var.questions["dor_de_garganta"][0])
+            var.questions["dor_de_garganta"][1] = True
+            if ans == "sim":
+                var.vars["dor_de_garganta"] = True
+                var.vars["garganta_inflamada"] = True
+       
+        if "cansaço" == mt:
+            ans = self.handleInput(var.questions["privação_de_sono"][0])
+            var.questions["privação_de_sono"][1] = True
+            if ans == "sim":
+                var.vars["cansaço"] = True
+                var.vars["privação_de_sono"] = True
+
 
 
 Backward()
