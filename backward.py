@@ -2,6 +2,7 @@ import var
 
   
 class Backward():
+    
     def handleInput(self,rule):
      flag = True
      while flag:
@@ -27,6 +28,5 @@ class Backward():
                 var.vars["privação_de_sono"] = True
 
 
-        
 
-        
+Backward()
