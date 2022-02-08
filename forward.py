@@ -2,7 +2,6 @@ import var
 
 class Forward():
     def search(self, addDiagnoses):
-        
         if var.vars["dor_de_cabeça"]:
             addDiagnoses('receitar = analgésico')
         if var.vars["dor_de_cabeça"] and var.vars["garganta_inflamada"] and var.vars["tosse"]:
