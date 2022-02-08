@@ -1,3 +1,4 @@
+flag = None
 vars = {
     "dor_de_cabeça": None,
     "garganta_inflamada": None,
@@ -25,8 +26,9 @@ rules = [
 
 
 questions = {
-            "dor_de_cabeça": "Você está com dor de cabeça ?",
-            "dor_de_ouvido": "Você está com dor de ouvido ?",
-            "tosse": "Você está com tosse ?",
-            "dor_de_garganta": "Você está com dor de garganta ?",
-        }
+    "dor_de_cabeça": ["Você está com dor de cabeça?\nSim ou Não\n",flag],
+    "dor_de_ouvido": ["Você está com dor de ouvido?\nSim ou Não\n",flag],
+    "tosse": ["Você está com tosse ?\nSim ou não\n",flag],
+    "dor_de_garganta": ["Você está com dor de garganta?\nSim ou Não\n",flag],
+    "privação_de_sono": ["Você está com problemas para dormir?\nSim ou Não\n",flag]
+}
