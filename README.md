@@ -1,5 +1,12 @@
 # Lista 2 - IA
-Base de conhecimento
+## Execução
+***
+    python main.py
+***
+
+* Ao responder as perguntas utilize os formatos: "sim" e "não" 
+
+## Base de conhecimento
 
 - "MT": "dor_de_cabeça",
     - "rules": 
